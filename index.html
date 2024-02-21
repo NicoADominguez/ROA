@@ -1,0 +1,43 @@
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant order app </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Jimmy's Diner</h1>
+            <h2>The best burgers and pizzas in town.</h2>
+        </div>
+    </header>
+    <div class="container">
+        <section class="menu" id="menu"></section>
+        <section class="cart" id="cart"></section>
+        <section class="pay-form" id="pay-form">
+            <h3>Enter your card details</h3>
+            <form id="form-el">
+                <input 
+                    type="text"
+                    placeholder="Enter your name"
+                    id="user-name"
+                    required/>
+                <input 
+                    type="text"
+                    placeholder="Enter card number"
+                    required/>
+                <input 
+                    type="text"
+                    placeholder="Enter CVV"
+                    required/>
+                <button type="submit">Pay</button>       
+            </form>
+        </section>
+        <section class="order-confirmation" id="order-confirmation"></section>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+
